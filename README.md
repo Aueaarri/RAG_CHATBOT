@@ -30,7 +30,7 @@ RAGchatbot is an innovative AI-powered chatbot that uses Retrieval-Augmented Gen
 ### Steps
 1. Clone the repository
 ```bash
-git clone https://github.com/your-team/ragchatbot.git
+git https://github.com/Aueaarri/RAG_CHATBOT.git
 ```
 
 2. Open `index.html` in your web browser
