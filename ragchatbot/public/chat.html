@@ -74,6 +74,14 @@
     });
   </script>
 
+  <script>
+    function showPage(page) {
+      const sections = document.querySelectorAll('.content-section');
+      sections.forEach(section => section.classList.add('hidden'));
+      document.getElementById(page).classList.remove('hidden');
+    }
+  </script>
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -96,34 +104,19 @@
   </head>
 
   <body>
-    <header class="bg-white shadow-md">
-      <div
-        class="container mx-auto px-4 py-4 flex justify-between items-center"
-      >
-        <div class="text-2xl font-bold custom-red">RAGchatbot</div>
-        <nav>
-          <ul class="flex space-x-8">
-            <li>
-              <a href="#" class="px-2 py-1 text-gray-700 hover:custom-red"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="\public\chat.html"
-                class="px-2 py-1 text-gray-700 custom-red font-semibold border-b-2 border-red-900"
-                >Chatbot</a
-              >
-            </li>
-            <li>
-              <a href="\public\index.html" class="px-2 py-1 hover:custum-red"
-                >About Us</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <!-- Header -->
+    <header class="bg-white shadow-xl sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+          <div class="text-3xl font-bold custom-red tracking-wide">RAGchatbot</div>
+          <nav>
+            <ul class="flex space-x-8 text-lg">
+              <li><a href="#" class="px-2 py-1 text-gray-700 hover:custom-red" onclick="showPage('home')">Home</a></li>
+              <li><a href="#" class="px-2 py-1 text-gray-700 hover:custom-red" onclick="showPage('chatbot')">Chatbot</a></li>
+              <li><a href="#" class="px-2 py-1 text-gray-700 hover:custom-red" onclick="showPage('about')">About Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
     <main>
       <h1 class="custom-red font-bold text-3xl text-center mt-14">
