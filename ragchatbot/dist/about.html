@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About RAGchatbot</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    body {
+  <style>body {
       background-color: #EEEBDD;
     }
     .custom-red {
@@ -47,9 +46,8 @@
     .nav-link:hover::after,
     .nav-link.active::after {
       width: 100%;
-    }
-  </style>
-</head>
+    }</style>
+<script src="/chat.js"></script></head>
 <body class="flex flex-col min-h-screen">
   <!-- Header -->
   <header class="bg-white shadow-xl sticky top-0 z-50">
@@ -58,13 +56,13 @@
       <nav>
         <ul class="flex space-x-8 text-lg">
           <li>
-            <a href="home.html" class="nav-link px-2 py-1 text-gray-700 hover:custom-red">Home</a>
+            <a href="/home.html" class="nav-link px-2 py-1 text-gray-700 hover:custom-red">Home</a>
           </li>
           <li>
-            <a href="chat.html" class="nav-link px-2 py-1 text-gray-700 hover:custom-red">Chatbot</a>
+            <a href="/chat.html" class="nav-link px-2 py-1 text-gray-700 hover:custom-red">Chatbot</a>
           </li>
           <li>
-            <a href="about.html" class="nav-link px-2 py-1 text-gray-700 hover:custom-red active">About Us</a>
+            <a href="/about.html" class="nav-link px-2 py-1 text-gray-700 hover:custom-red active">About Us</a>
           </li>
         </ul>
       </nav>
@@ -93,21 +91,21 @@
       <div class="grid md:grid-cols-3 gap-8">
         <div class="bg-white p-6 rounded-lg shadow-md text-center">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 text-custom-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
           </svg>
           <h3 class="text-xl font-semibold mb-3">Retrieval-Augmented Generation</h3>
           <p class="text-gray-600">Advanced AI technique that combines information retrieval with generative models to provide accurate and contextual responses.</p>
         </div>
         <div class="bg-white p-6 rounded-lg shadow-md text-center">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 text-custom-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
           </svg>
           <h3 class="text-xl font-semibold mb-3">Intelligent Context Understanding</h3>
           <p class="text-gray-600">Sophisticated natural language processing to comprehend nuanced queries and extract relevant information.</p>
         </div>
         <div class="bg-white p-6 rounded-lg shadow-md text-center">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 text-custom-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           </svg>
           <h3 class="text-xl font-semibold mb-3">Continuous Learning</h3>
           <p class="text-gray-600">Adaptive AI system that improves response accuracy through ongoing training and knowledge base expansion.</p>
@@ -122,7 +120,7 @@
         <!-- Team Members (Same as before) -->
         <div class="bg-white rounded-lg shadow-xl overflow-hidden card-hover transition-transform duration-300">
           <div class="p-6 flex flex-col items-center">
-            <img src="mem1.jpg" alt="Team Member 1" class="w-48 h-48 object-cover rounded-full mb-4 card-image">
+            <img src="/mem1.afe59843.jpg" alt="Team Member 1" class="w-48 h-48 object-cover rounded-full mb-4 card-image">
             <h3 class="font-semibold text-xl text-gray-800">Kamonnut Wongprombut</h3>
             <p class="font-medium mb-2 custom-red">Computer Engineering Student</p>
             <p class="text-gray-600 text-center">Student ID: 653040117-6</p>
@@ -146,7 +144,7 @@
         <!-- Repeat for other team members with similar enhancements -->
         <div class="bg-white rounded-lg shadow-xl overflow-hidden card-hover transition-transform duration-300">
           <div class="p-6 flex flex-col items-center">
-            <img src="mem2.jpg" alt="Team Member 2" class="w-48 h-48 object-cover rounded-full mb-4 card-image">
+            <img src="/mem2.0d557580.jpg" alt="Team Member 2" class="w-48 h-48 object-cover rounded-full mb-4 card-image">
             <h3 class="font-semibold text-xl text-gray-800">Theerayut Sodaying</h3>
             <p class="font-medium mb-2 custom-red">Computer Engineering Student</p>
             <p class="text-gray-600 text-center">Student ID: 653040129-9</p>
@@ -169,7 +167,7 @@
 
         <div class="bg-white rounded-lg shadow-xl overflow-hidden card-hover transition-transform duration-300">
           <div class="p-6 flex flex-col items-center">
-            <img src="mem3.jpg" alt="Team Member 3" class="w-48 h-48 object-cover rounded-full mb-4 card-image">
+            <img src="/mem3.a9185ba0.jpg" alt="Team Member 3" class="w-48 h-48 object-cover rounded-full mb-4 card-image">
             <h3 class="font-semibold text-xl text-gray-800">Ue-aree Deeplangam</h3>
             <p class="font-medium mb-2 custom-red">Computer Engineering Student</p>
             <p class="text-gray-600 text-center">Student ID: 653040149-3</p>
@@ -192,7 +190,7 @@
 
         <div class="bg-white rounded-lg shadow-xl overflow-hidden card-hover transition-transform duration-300">
           <div class="p-6 flex flex-col items-center">
-            <img src="mem4.jpg" alt="Team Member 4" class="w-48 h-48 object-cover rounded-full mb-4 card-image">
+            <img src="/mem4.37ed93c8.jpg" alt="Team Member 4" class="w-48 h-48 object-cover rounded-full mb-4 card-image">
             <h3 class="font-semibold text-xl text-gray-800">Jiraphat Sirisuwan</h3>
             <p class="font-medium mb-2 custom-red">Computer Engineering Student</p>
             <p class="text-gray-600 text-center">Student ID: 653040441-7</p>
@@ -215,7 +213,7 @@
 
         <div class="bg-white rounded-lg shadow-xl overflow-hidden card-hover transition-transform duration-300">
           <div class="p-6 flex flex-col items-center">
-            <img src="mem5.jpg" alt="Team Member 5" class="w-48 h-48 object-cover rounded-full mb-4 card-image">
+            <img src="/mem5.63647a4b.jpg" alt="Team Member 5" class="w-48 h-48 object-cover rounded-full mb-4 card-image">
             <h3 class="font-semibold text-xl text-gray-800">Phanthipa Detpathumh</h3>
             <p class="font-medium mb-2 custom-red">Computer Engineering Student</p>
             <p class="text-gray-600 text-center">Student ID: 653040457-2</p>
@@ -278,17 +276,14 @@
     </div>
   </footer>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const currentLocation = window.location.href;
-      const navLinks = document.querySelectorAll('.nav-link');
-  
-      navLinks.forEach(link => {
-        if (link.href === currentLocation) {
-          link.classList.add('active');
-        }
-      });
-    });
-  </script>
+  <script>document.addEventListener('DOMContentLoaded', () => {
+  const currentLocation = window.location.href;
+  const navLinks = document.querySelectorAll('.nav-link');
+  navLinks.forEach(link => {
+    if (link.href === currentLocation) {
+      link.classList.add('active');
+    }
+  });
+});</script>
 </body>
 </html>
