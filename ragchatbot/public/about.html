@@ -15,10 +15,7 @@
     .bg-custom-red {
       background-color: #630000;
     }
-    .hover\:custom-red:hover {
-      color: #630000;
-      text-decoration: underline;
-    }
+    
     .bg-custom-red-dark {
       background-color: #5A0000;
     }
@@ -35,6 +32,25 @@
     .hidden {
       display: none;
     }
+    .nav-link {
+      position: relative;
+    }
+  
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 0;
+      height: 2px;
+      background-color: #630000; /* สีของเส้นขีด */
+      transition: width 0.3s ease;
+    }
+  
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
   </style>
 </head>
 <body>
@@ -45,31 +61,21 @@
         <div class="text-3xl font-bold custom-red tracking-wide">RAGchatbot</div>
         <nav>
           <ul class="flex space-x-8 text-lg">
-            <li><a href="#" class="px-2 py-1 text-gray-700 hover:custom-red" onclick="showPage('home')">Home</a></li>
-            <li><a href="#" class="px-2 py-1 text-gray-700 hover:custom-red" onclick="showPage('chatbot')">Chatbot</a></li>
-            <li><a href="#" class="px-2 py-1 text-gray-700 hover:custom-red" onclick="showPage('about')">About Us</a></li>
+            <li>
+              <a href="home.html" class="nav-link px-2 py-1 text-gray-700 hover:custom-red" >Home</a>
+            </li>
+            <li>
+              <a href="chat.html" class="nav-link px-2 py-1 text-gray-700 hover:custom-red" >Chatbot</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link px-2 py-1 text-gray-700 hover:custom-red" >About Us</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="container mx-auto py-16 px-4 flex-grow">
-      <!-- Home Section -->
-      <section id="home" class="content-section">
-        <h1 class="text-4xl font-bold text-center mb-12 custom-red">Welcome to RAGchatbot</h1>
-        
-      </section>
-
-      <!-- Chatbot Section -->
-      <section id="chatbot" class="content-section hidden">
-        <h1 class="text-4xl font-bold text-center mb-12 custom-red">Chatbot</h1>
-       
-      </section>
-
-      <!-- About Us Section -->
-      <section id="about" class="content-section hidden">
-        <h1 class="text-4xl font-bold text-center mb-12 custom-red">About Us</h1>
+        <h1 class="text-4xl font-bold text-center mb-12 custom-red mt-12">About Us</h1>
         
         <div class="max-w-3xl mx-auto mb-12 text-center">
           <p class="text-lg text-gray-800 mb-6">
@@ -134,7 +140,6 @@
               </div>
           </div>
         </div>
-      </section>
     </main>
 
     <!-- Footer -->
@@ -160,12 +165,17 @@
     </footer>
   </div>
 
-  <script>
-    function showPage(page) {
-      const sections = document.querySelectorAll('.content-section');
-      sections.forEach(section => section.classList.add('hidden'));
-      document.getElementById(page).classList.remove('hidden');
-    }
+  <script> 
+    document.addEventListener('DOMContentLoaded', () => {
+      const currentLocation = window.location.href;
+      const navLinks = document.querySelectorAll('.nav-link');
+  
+      navLinks.forEach(link => {
+        if (link.href === currentLocation) {
+          link.classList.add('active');
+        }
+      });
+    });
   </script>
 </body>
 </html>
