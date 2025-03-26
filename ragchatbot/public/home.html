@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home RAGchatbot</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+ <style>
+    body {
+      background-color: #EEEBDD;
+      font-family: "Montserrat", sans-serif;
+    }
+    .custom-red {
+      color: #630000;
+    }
+    .bg-custom-red {
+      background-color: #630000;
+    }
+    .bg-custom-red-dark {
+      background-color: #5A0000;
+    }
+    .nav-link {
+      position: relative;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 0;
+      height: 2px;
+      background-color: #630000;
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+  </style>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="flex flex-col min-h-screen">
+  <header class="bg-white shadow-xl sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+      <div class="text-3xl font-bold custom-red tracking-wide">RAGchatbot</div>
+      <nav>
+        <ul class="flex space-x-8 text-lg">
+          <li><a href="home.html" class="nav-link px-2 py-1 text-gray-700 hover:custom-red">Home</a></li>
+          <li><a href="chat.html" class="nav-link px-2 py-1 text-gray-700 hover:custom-red">Chatbot</a></li>
+          <li><a href="about.html" class="nav-link px-2 py-1 text-gray-700 hover:custom-red active">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bg-[#EEEBDD] min-h-screen flex items-center px-6 md:px-24">
+    <div class="flex flex-col md:flex-row items-center justify-center w-full gap-8 md:gap-x-16">
+      
+      <!-- Text -->
+      <div class="flex-1 flex flex-col justify-center text-left space-y-2 md:space-y-4 max-w-xl">
+        <h1 class="text-2xl md:text-4xl font-medium text-gray-900 tracking-wider">WELCOME TO OUR</h1>
+  
+        <div class="text-3xl md:text-5xl font-extrabold leading-snug text-[#630000] tracking-wider">
+          COURSE RECOMMENDATION
+        </div>
+  
+        <!-- CHATBOT FOR + line -->
+        <div class="flex items-center space-x-3">
+          <div class="text-3xl md:text-5xl font-extrabold text-black whitespace-nowrap tracking-wider">CHATBOT </div>
+          <h1 class="text-2xl md:text-4xl font-medium text-gray-900 tracking-wider">FOR</h1>
+          <div class="h-0.5 bg-black w-32 md:w-48"></div>
+        </div>
+  
+        <h3 class="text-2xl md:text-3xl font-medium text-gray-900 tracking-wider">COMPUTER ENGINEERING</h3>
+        <p class="italic text-gray-700 text-sm md:text-base tracking-wider">STUDENT @KKU</p>
+      </div>
+  
+      <!-- Image -->
+      <div class="flex-1 flex justify-center items-center">
+        <img src="figure.png" alt="Character" class="w-72 md:w-[450px] max-h-[90vh] object-contain">
+      </div>
+  
+    </div>
+  </section>
+  
+  <section class="bg-[#EEEBDD] py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl  font-bold text-center text-[#630000] mb-10 ">Study Plan (By Semester)</h2>
+  
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- FIRST -->
+        <div class="bg-custom-red-dark rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <h4 class="text-lg font-semibold text-[#EEEBDD] uppercase mb-2">First Semester</h4>
+          <p class="text-white mb-3">Total: 19 Credits</p>
+          <ul class="list-disc ml-5 text-gray-100 leading-relaxed">
+            <li>English I (3 credits)</li>
+            <li>Calculus I (3 credits)</li>
+            <li>Physics I (3 credits)</li>
+            <li>Physics Lab I (1 credit)</li>
+            <li>ENGL SLDW (0 credit, AU)</li>
+            <li>Fund Comp Prog. (3 credits)</li>
+            <li>Fund Comp Prog. Lab (1 credit)</li>
+            <li>Learning Skill (3 credits)</li>
+          </ul>
+        </div>
+  
+        <!-- SECOND -->
+        <div class="bg-custom-red-dark rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <h4 class="text-lg font-semibold text-[#EEEBDD] uppercase mb-2">Second Semester</h4>
+          <p class="text-white mb-3">Total: 19 Credits</p>
+          <ul class="list-disc ml-5 text-gray-100 leading-relaxed">
+            <li>English II (3 credits)</li>
+            <li>Calculus II (3 credits)</li>
+            <li>Physics II (3 credits)</li>
+            <li>Physics Lab II (1 credit)</li>
+            <li>AD. Comp Prog. (3 credits)</li>
+            <li>AD. Comp Prog. Lab (1 credit)</li>
+            <li>Stat & Prob (3 credits)</li>
+            <li>Creative Thinking (2 credits)</li>
+          </ul>
+        </div>
+  
+        <!-- THIRD -->
+        <div class="bg-custom-red-dark rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <h4 class="text-lg font-semibold text-[#EEEBDD] uppercase mb-2">Third Semester</h4>
+          <p class="text-white mb-3">Total: 19 Credits</p>
+          <ul class="list-disc ml-5 text-gray-100 leading-relaxed">
+            <li>English III (3 credits)</li>
+            <li>Discrete Math (3 credits)</li>
+            <li>Analog & Digital Circuits (3 credits)</li>
+            <li>Analog Lab (1 credit)</li>
+            <li>Data Structure (3 credits)</li>
+            <li>Data Structure Lab (1 credit)</li>
+            <li>Engineering Mathematics (3 credits)</li>
+            <li>Creative Thinking (2 credits)</li>
+          </ul>
+        </div>
+  
+        <!-- FOURTH -->
+        <div class="bg-custom-red-dark rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <h4 class="text-lg font-semibold text-[#EEEBDD] uppercase mb-2">Fourth Semester</h4>
+          <p class="text-white mb-3">Total: 19 Credits</p>
+          <ul class="list-disc ml-5 text-gray-100 leading-relaxed">
+            <li>Technical Writing (3 credits)</li>
+            <li>Computer Architecture (3 credits)</li>
+            <li>Operating System (3 credits)</li>
+            <li>Operating System Lab (1 credit)</li>
+            <li>Database (3 credits)</li>
+            <li>Database Lab (1 credit)</li>
+            <li>Embedded System (3 credits)</li>
+            <li>ABCD for All (1 credit)</li>
+          </ul>
+        </div>
+  
+        <!-- FIFTH -->
+        <div class="bg-custom-red-dark rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <h4 class="text-lg font-semibold text-[#EEEBDD] uppercase mb-2">Fifth Semester</h4>
+          <p class="text-white mb-3">Total: 21 Credits</p>
+          <ul class="list-disc ml-5 text-gray-100 leading-relaxed">
+            <li>Stochastic Process/Model (3 credits)</li>
+            <li>Seminar (1 credit)</li>
+            <li>Microprocessor Lab (1 credit)</li>
+            <li>Microprocessor (3 credits)</li>
+            <li>Comp Arch II (3 credits)</li>
+            <li>Comp Network (3 credits)</li>
+            <li>Comp Network Lab (1 credit)</li>
+            <li>Data Mining (3 credits)</li>
+            <li>Elective I (3 credits)</li>
+          </ul>
+        </div>
+  
+        <!-- SIXTH -->
+        <div class="bg-custom-red-dark rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <h4 class="text-lg font-semibold text-[#EEEBDD] uppercase mb-2">Sixth Semester</h4>
+          <p class="text-white mb-3">Total: 18 Credits</p>
+          <ul class="list-disc ml-5 text-gray-100 leading-relaxed">
+            <li>Intro to DIGI (3 credits)</li>
+            <li>Web or Internet of Things (3 credits)</li>
+            <li>Work Preparation (0 credits)</li>
+            <li>Software Engineering (3 credits)</li>
+            <li>Software Eng Lab (1 credit)</li>
+            <li>Theory of Comp (3 credits)</li>
+            <li>Elective II (3 credits)</li>
+            <li>Service Learning (2 credits)</li>
+          </ul>
+        </div>
+  
+        <!-- SEVENTH -->
+        <div class="bg-custom-red-dark rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <h4 class="text-lg font-semibold text-[#EEEBDD] uppercase mb-2">Seventh Semester</h4>
+          <p class="text-white mb-3">Total: 1 Credit</p>
+          <ul class="list-disc ml-5 text-gray-100 leading-relaxed">
+            <li>Training (1 credit)</li>
+          </ul>
+        </div>
+  
+        <!-- EIGHTH -->
+        <div class="bg-custom-red-dark rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <h4 class="text-lg font-semibold text-[#EEEBDD] uppercase mb-2">Eighth Semester</h4>
+          <p class="text-white mb-3">Total: 6 Credits</p>
+          <ul class="list-disc ml-5 text-gray-100 leading-relaxed">
+            <li>Elective III (3 credits)</li>
+            <li>Elective IV (3 credits)</li>
+            <li>Free Elective (0 credits)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer class="py-6 mt-16 bg-custom-red-dark">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <h3 class="text-2xl font-extrabold mb-2 text-white">RAGchatbot</h3>
+          <p class="text-white opacity-80">Advanced retrieval-augmented chatbot solutions</p>
+        </div>
+        <div>
+          <ul class="flex space-x-6">
+            <li><a href="#" class="text-white hover:underline">Contact</a></li>
+            <li><a href="#" class="text-white hover:underline">Privacy Policy</a></li>
+            <li><a href="#" class="text-white hover:underline">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-6 pt-6 border-t border-white border-opacity-20 text-center text-white opacity-80">
+        <p>&copy; 2025 RAGchatbot. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const currentLocation = window.location.href;
+      const navLinks = document.querySelectorAll('.nav-link');
+  
+      navLinks.forEach(link => {
+        if (link.href === currentLocation) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
