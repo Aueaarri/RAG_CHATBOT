@@ -1,56 +1,79 @@
-# 🤖 RAGchatbot: Smart Information Retrieval Chatbot 
-
-## 👥 Our Awesome Team
-- Kamonnan Wongpromboot
-- Teerayut Sodaying
-- Aue-Aree Deephonngam
-- Jiraphat Sirisuwan
-- Phantipa Decpathum
+# RAGchatbot: Course Recommendation Chatbot for Computer Engineering Students
 
 ## 🚀 Project Overview
-RAGchatbot is an innovative AI-powered chatbot that uses Retrieval-Augmented Generation (RAG) to provide accurate, context-aware responses. Our mission is to create an intelligent conversational assistant that can efficiently retrieve and generate information.
 
-## ✨ Features
-- 🧠 Advanced RAG Technology
-- 📚 Context-Aware Responses
-- 🔍 Intelligent Information Retrieval
-- 💬 Natural Language Understanding
+RAGchatbot is a web-based chatbot application designed specifically for Computer Engineering students at KKU (Khon Kaen University). The application provides an interactive platform for students to get course recommendations, explore study plans, and engage with an intelligent chatbot interface.
 
-## 🛠 Tech Stack
-- Frontend: HTML, Tailwind CSS
-- Backend: (To be implemented)
-- AI Framework: (To be specified)
+## 📁 Project Structure
 
-## 📦 Installation
+- `home.html`: Landing page with study plan details
+- `chat.html`: Chatbot interaction page
+- `about.html`: About page (to be developed)
+- `figure.png`: Main landing page image
 
-### Prerequisites
-- Web browser
-- Internet connection
+## 🌟 Features
 
-### Steps
+1. **Interactive Chatbot**
+   - Ask questions and receive instant responses
+   - Integrated chat interface
+   - Responsive design
+
+2. **Study Plan Visualization**
+   - Detailed semester-wise course breakdown
+   - Credit information for each semester
+   - Easy-to-read grid layout
+
+3. **Responsive Design**
+   - Mobile and desktop friendly
+   - Tailwind CSS for styling
+   - Consistent color scheme
+
+## 💻 Technologies Used
+
+- HTML5
+- Tailwind CSS
+- JavaScript
+- React (included but not fully implemented)
+
+## 🔧 Setup and Installation
+
 1. Clone the repository
 ```bash
-git https://github.com/Aueaarri/RAG_CHATBOT.git
+git clone https://github.com/Aueaarri/RAG_CHATBOT.git
 ```
 
-2. Open `index.html` in your web browser
+2. Open the project in your preferred code editor
 
-## 🤝 How to Contribute
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+3. Launch the application by opening `home.html` in a web browser
 
-## 🌟 Future Roadmap
-- [ ] Implement full chatbot functionality
-- [ ] Add machine learning models
-- [ ] Enhance response accuracy
-- [ ] Create backend integration
+## 📝 Navigation
 
-## 📝 License
-Distributed under the MIT License. See `LICENSE` for more information.
+- **Home**: Overview and study plan details
+- **Chatbot**: Interactive chat interface
+- **About Us**: Additional project information (to be developed)
 
+## 🎨 Color Scheme
+
+- Primary Red: `#630000`
+- Background Cream: `#EEEBDD`
+
+## 🔍 Chatbot Usage
+
+1. Navigate to the chatbot page
+2. Type your question in the input field
+3. Press Enter or click the send button
+4. Receive AI-generated responses
+
+## 🚧 Future Enhancements
+
+- Implement full RAG (Retrieval-Augmented Generation) capabilities
+- Add more interactive features
+- Develop comprehensive About page
+- Enhance chatbot intelligence
+
+## 📄 License
+
+Distributed under the MIT License. See LICENSE for more information.
 ---
 
-*Made with ❤️ by Computer Engineering Students*
+**Note**: This is a student project developed for educational purposes.
