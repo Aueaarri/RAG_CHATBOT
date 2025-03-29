@@ -24,6 +24,25 @@
       .text-custom-red { background-color: #630000; }
       .bg-custom-red { background-color: #630000; }
       .bg-custom-cream { background-color: #eeebdd; }
+      .nav-link {
+        position: relative;
+      }
+    
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background-color: #630000;
+        transition: width 0.3s ease;
+      }
+    
+      .nav-link:hover::after,
+      .nav-link.active::after {
+        width: 100%;
+      }
     </style>
   </head>
   <body>
@@ -33,9 +52,15 @@
         <div class="text-3xl font-bold custom-red tracking-wide">RAGchatbot</div>
         <nav>
           <ul class="flex space-x-8 text-lg">
-            <li><a href="home.html" class="nav-link px-2 py-1 text-gray-700 hover:text-custom-red">Home</a></li>
-            <li><a href="chat.html" class="nav-link px-2 py-1 text-gray-700 hover:text-custom-red">Chatbot</a></li>
-            <li><a href="about.html" class="nav-link px-2 py-1 text-gray-700 hover:text-custom-red">About Us</a></li>
+            <li>
+              <a href="home.html" class="nav-link px-2 py-1 text-gray-700 hover:custom-red">Home</a>
+            </li>
+            <li>
+              <a href="chat.html" class="nav-link px-2 py-1 text-gray-700 hover:custom-red active">Chatbot</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link px-2 py-1 text-gray-700 hover:custom-red ">About Us</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -80,6 +105,19 @@
     </main>
 
     <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const currentLocation = window.location.href;
+        const navLinks = document.querySelectorAll('.nav-link');
+    
+        navLinks.forEach(link => {
+          if (link.href === currentLocation) {
+            link.classList.add('active');
+          }
+        });
+      });
+
+
+
       document.addEventListener("DOMContentLoaded", function () {
         const inputField = document.getElementById("userInput");
         const sendButton = document.getElementById("sendButton");
